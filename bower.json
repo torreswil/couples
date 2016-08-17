@@ -1,0 +1,22 @@
+{
+  "name": "coples",
+  "authors": [
+    "wtorresariza@gmail.com"
+  ],
+  "description": "game of couples professions",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "game",
+    "couples"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html  ng-app="couples">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Professions Couples</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-cloak ng-controller="couplesController as cp">
+
+	<div class="content">
+		<div class="board">
+			<div class="card" ng-repeat="prof in profs track by $index"">
+				<div class="content-card {{prof.state}}"  ng-click="selectCard(prof)">
+					<div class="side front">
+						
+					</div>
+					<div class="side back">
+						<div class="prof">
+							<div class="prof-text"  ng-bind="prof.job"></div>
+							<div class="prof-img  {{prof.job}}"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="score">
+			<span>Record:</span>
+			<h2 ng-bind="cp.hiScore"></h2><br>
+			<span>Clicks:</span>
+			<h2 ng-bind="cp.clicks"></h2>
+			<button ng-show="cp.couples>=10" ng-click="cp.reset()">Volver a Jugar</button>
+		</div>
+		
+	</div>
+
+<script src="packages/jquery/dist/jquery.min.js"></script>
+<script src="packages/angular/angular.min.js"></script>
+<script src="app/couples.js"></script>
+<script src="app/couplesController.js"></script>
+<script src="app/interactivity.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+  background-image: url("../img/pano.jpg");
+  background-repeat: repeat; }
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 1320px; }
+
+.score {
+  width: 200px; }
+
+.board {
+  max-width: 1150px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.card {
+  width: 208px;
+  height: 145px;
+  margin: 5px;
+  -webkit-perspective: 800;
+  -moz-perspective: 800;
+  perspective: 800; }
+
+.rotate {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.check {
+  border: 1px solid #ff0000;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.content-card {
+  background-image: url("../img/back.png");
+  background-size: 100%;
+  border-radius: 9px;
+  width: 100%;
+  box-shadow: 0px 0px 5px #828282;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 0.5s;
+  transform-style: preserve-3d;
+  transition: all 0.5s; }
+  .content-card:hover {
+    width: 206px;
+    height: 143px;
+    border: 1px solid #ff0000;
+    cursor: pointer; }
+  .content-card .side {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .content-card .front {
+    height: 100%;
+    width: 100%; }
+  .content-card .back {
+    border-radius: 6px;
+    background: #F0F0F0;
+    font-family: Helvetica, Verdana, Arial;
+    font-size: 1.3rem;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+
+.prof {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px; }
+
+.prof-text {
+  width: 60%;
+  padding-left: 12px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+.prof-img {
+  width: 29%;
+  height: 130px;
+  margin-right: 25px;
+  overflow: hidden;
+  background-image: url("../img/profesiones.png"); }
+
+.lawyer {
+  background-position-x: -17px; }
+
+.doctor {
+  background-position-x: -62px; }
+
+.builder {
+  background-position-x: -127px; }
+
+.architect {
+  background-position-x: -178px; }
+
+.courier {
+  background-position-x: -288px; }
+
+.consultant {
+  background-position-x: -343px; }
+
+.plumber {
+  background-position-x: -72px;
+  background-position-y: -129px; }
+
+.nurse {
+  background-position-x: -120px;
+  background-position-y: -129px; }
+
+.painter {
+  background-position-x: -178px;
+  background-position-y: -129px; }
+
+.electrician {
+  background-position-x: -63px;
+  background-position-y: -255px; }
+
+/*# sourceMappingURL=styles.css.map */
